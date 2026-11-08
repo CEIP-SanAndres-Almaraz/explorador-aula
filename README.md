@@ -1,5 +1,8 @@
 # Horizonte Talento · Explorador de Aula
 
+**Versión:** 0.4.0  
+**Creada por:** Guillermo Montero Vaquero
+
 Aplicación web estática para explorar intereses y formas de aprender y planificar propuestas flexibles para Infantil, Primaria y Secundaria.
 
 ## Uso
@@ -23,6 +26,10 @@ El HTML no carga bibliotecas, fuentes ni recursos externos.
 ## Alcance educativo
 
 Los cuestionarios son orientativos y no están validados como instrumentos psicométricos. No diagnostican personalidad ni altas capacidades y no deben utilizarse para etiquetar o limitar al alumnado. Los retos y agrupamientos son propuestas flexibles que el equipo docente puede adaptar, sustituir o descartar.
+
+## Versionado
+
+La aplicación muestra la versión `0.4.0`. Mientras siga en `0.x`, aumenta el número central para añadir funciones y el último para correcciones pequeñas. Al considerar estable el alcance principal, se podrá pasar a `1.0.0`.
 
 ## Contenido del paquete
 
