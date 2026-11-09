@@ -1,39 +1,44 @@
 # Horizonte Talento · Explorador de Aula
 
-**Versión:** 0.4.0  
-**Creada por:** Guillermo Montero Vaquero
+**Versión: v0.5.0** · **Fecha de preparación: 9 de noviembre de 2026**  
+**Autor:** Guillermo Montero Vaquero · CEIP San Andrés (Almaraz, Cáceres)
 
-Aplicación web estática para explorar intereses y formas de aprender y planificar propuestas flexibles para Infantil, Primaria y Secundaria.
+Aplicación educativa estática destinada a ayudar al profesorado a observar **intereses, preferencias de participación y sensibilidades del entorno** y a explorar apoyos en el aula. Es una herramienta experimental: no constituye diagnóstico, evaluación psicométrica validada ni valoración de terapia ocupacional.
 
-## Uso
+## Funciones
 
-Abre `index.html` con un navegador actualizado. No necesita instalación, cuenta, servidor ni conexión a internet.
+- Recorridos individual y grupal (hasta 30 alumnos) de Infantil, Primaria y 1.º–2.º de ESO.
+- Tres módulos seleccionables: **Intereses** (12 cuestiones), **Personalidad y preferencias** (24 observaciones) y **Sensibilidades** (21 observaciones propias y provisionales).
+- Gráficas radiales, informes individuales y visión grupal con propuestas de actuación **específicas para los alumnos implicados** y para el conjunto de la clase.
+- Orientaciones para adaptar el entorno, una propuesta educativa de rutina sensorial y seguimiento; no es una dieta sensorial clínica.
+- Demostración con Lucía, Hugo y Martina; nombres o seudónimos opcionales en la exploración real.
+- Informes PDF descargables, aparte de la impresión convencional.
+- Recuperación de exploraciones en la misma pestaña al volver al inicio o recargar, con borrado explícito.
 
-La aplicación permite crear hasta 30 fichas temporales, completar por separado los cuestionarios de personalidad y de intereses, consultar resultados parciales y completos, y revisar tendencias agregadas del grupo. Incluye coincidencias de intereses, agrupamientos flexibles, proyectos orientativos y retos adaptados por edad o curso.
+## Privacidad y límites
 
-En los cuestionarios combinados, el informe empieza con un resumen de personalidad e intereses. Las observaciones completas y los retos se pueden desplegar para consultar sus fases, producto posible, profundización opcional y alternativas de ajuste.
+Las respuestas, nombres o seudónimos **no se envían a ningún servidor de la aplicación**: el tratamiento y la exportación PDF funcionan en el navegador. Se utiliza **`sessionStorage`**, que normalmente conserva datos al recargar la misma pestaña; el cierre o restauración de pestañas depende del navegador. **No debe considerarse un almacenamiento permanente ni un sistema seguro de custodia de expedientes.** Se recomienda emplear seudónimos y pulsar «Borrar todas las exploraciones» al terminar en equipos compartidos.
 
-El banco incluye 208 propuestas: 48 para Infantil, 96 para Primaria (1.º–6.º) y 64 para Secundaria (1.º–4.º de ESO), distribuidas en ocho áreas de interés.
+El módulo sensorial no reproduce el cuestionario Koynos, no utiliza sus baremos y **no diagnostica** alteraciones sensoriales; las orientaciones se revisan con la observación docente, el alumno y orientación cuando corresponda. Los perfiles de personalidad son descriptivos y sus reglas experimentales no están validadas clínicamente.
 
-## Privacidad
+## Publicar en el repositorio existente
 
-El nombre y los apellidos son opcionales. Los nombres y las respuestas se mantienen únicamente en la memoria temporal de la pestaña: no se escriben en `localStorage`, `sessionStorage`, IndexedDB ni cookies, y no se envían a ningún servidor. Al cerrar o recargar la página, se borran.
+Repositorio: https://github.com/gmonterov84-voli/horizonte-talento-perfiles  
+Rama: **`main`** · Carpeta Pages: **`/(root)`**.
 
-Los informes individuales impresos incluyen el nombre que se haya escrito. Imprimir o guardar como PDF crea una copia fuera de la aplicación y queda bajo la gestión de quien la genera.
+1. Conserva una copia de la versión anterior y comprueba que no haya cambios nuevos en el repositorio antes de subir nada.
+2. **Extrae** el ZIP de publicación: **no subas el ZIP como sustituto de `index.html`**.
+3. En GitHub, abre el repositorio y usa **Add file → Upload files**. Arrastra `index.html`, `README.md`, `CHANGELOG.md` y `RELEASE_NOTES_v0.5.0.md` extraídos a la **raíz**. `index.html` y `README.md` reemplazan los anteriores. El archivo `.nojekyll` ya existe en el repositorio: **consérvalo sin eliminarlo** (también hay copia vacía en este paquete para instalaciones nuevas).
+4. Commit recomendado: **`Publicar Explorador de Aula v0.5.0`**.
+5. Comprueba la web de GitHub Pages después del despliegue; el commit es el que actualiza la web. La creación de una Release por sí sola no actualiza Pages.
+6. En **Releases → Draft a new release**, crea la etiqueta **`v0.5.0`**, título **`Explorador de Aula v0.5.0`** y pega el contenido de `RELEASE_NOTES_v0.5.0.md` en el campo de descripción. Opcional: adjunta el ZIP como recurso descargable de esa Release.
 
-El HTML no carga bibliotecas, fuentes ni recursos externos.
+## Verificaciones recomendadas tras subir
 
-## Alcance educativo
+- Abrir la demo y recorrer informes de Lucía, Hugo y Martina; comprobar los tres apartados y orientaciones por nombre.
+- Iniciar un grupo real pequeño y confirmar navegación al inicio, retorno al resumen e informes individuales sin perder datos.
+- Descargar un PDF individual y otro grupal; si la impresión falla en el navegador interno, usar un navegador convencional.
+- Abrir en ordenador y móvil, revisar el indicador visible **v0.5.0** y verificar que siguen los avisos de carácter experimental.
+- Comprobar el enlace público y que no se ha modificado la configuración de Pages.
 
-Los cuestionarios son orientativos y no están validados como instrumentos psicométricos. No diagnostican personalidad ni altas capacidades y no deben utilizarse para etiquetar o limitar al alumnado. Los retos y agrupamientos son propuestas flexibles que el equipo docente puede adaptar, sustituir o descartar.
-
-## Versionado
-
-La aplicación muestra la versión `0.4.0`. Mientras siga en `0.x`, aumenta el número central para añadir funciones y el último para correcciones pequeñas. Al considerar estable el alcance principal, se podrá pasar a `1.0.0`.
-
-## Contenido del paquete
-
-- `index.html`: aplicación completa, en un único archivo.
-- `README.md`: instrucciones de uso y privacidad.
-
-No se incluye un archivo de licencia. Añade la licencia que corresponda antes de publicar el repositorio.
+Consulta `CHANGELOG.md` para el historial y `RELEASE_NOTES_v0.5.0.md` para el texto listo para pegar en GitHub Releases.
