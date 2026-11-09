@@ -1,44 +1,52 @@
 # Horizonte Talento · Explorador de Aula
 
-**Versión: v0.5.0** · **Fecha de preparación: 9 de noviembre de 2026**  
-**Autor:** Guillermo Montero Vaquero · CEIP San Andrés (Almaraz, Cáceres)
+**Versión: 0.7.0 · 9 de noviembre de 2026**  
+**Autor de la herramienta:** Guillermo Montero Vaquero  
+**Centro:** CEIP San Andrés · Almaraz (Cáceres)
 
-Aplicación educativa estática destinada a ayudar al profesorado a observar **intereses, preferencias de participación y sensibilidades del entorno** y a explorar apoyos en el aula. Es una herramienta experimental: no constituye diagnóstico, evaluación psicométrica validada ni valoración de terapia ocupacional.
+Herramienta web educativa para explorar **intereses**, **personalidad y preferencias de aprendizaje**, y **sensibilidades del entorno** de forma individual o grupal. Ofrece gráficos radiales y propuestas orientativas para la planificación docente.
 
-## Funciones
+## Contenido del repositorio
 
-- Recorridos individual y grupal (hasta 30 alumnos) de Infantil, Primaria y 1.º–2.º de ESO.
-- Tres módulos seleccionables: **Intereses** (12 cuestiones), **Personalidad y preferencias** (24 observaciones) y **Sensibilidades** (21 observaciones propias y provisionales).
-- Gráficas radiales, informes individuales y visión grupal con propuestas de actuación **específicas para los alumnos implicados** y para el conjunto de la clase.
-- Orientaciones para adaptar el entorno, una propuesta educativa de rutina sensorial y seguimiento; no es una dieta sensorial clínica.
-- Demostración con Lucía, Hugo y Martina; nombres o seudónimos opcionales en la exploración real.
-- Informes PDF descargables, aparte de la impresión convencional.
-- Recuperación de exploraciones en la misma pestaña al volver al inicio o recargar, con borrado explícito.
+- `index.html`: aplicación completa. El HTML incorpora CSS, JavaScript y logotipos en un único archivo, sin dependencias externas para funcionar.
+- `README.md`: descripción y guía de publicación.
+- `CHANGELOG.md`: historial resumido de versiones.
+- `RELEASE_NOTES_v0.7.0.md`: texto preparado para la descripción de la Release de GitHub.
+- `.nojekyll`: archivo necesario para conservar el comportamiento de GitHub Pages configurado para el proyecto.
 
-## Privacidad y límites
+## Funcionalidades
 
-Las respuestas, nombres o seudónimos **no se envían a ningún servidor de la aplicación**: el tratamiento y la exportación PDF funcionan en el navegador. Se utiliza **`sessionStorage`**, que normalmente conserva datos al recargar la misma pestaña; el cierre o restauración de pestañas depende del navegador. **No debe considerarse un almacenamiento permanente ni un sistema seguro de custodia de expedientes.** Se recomienda emplear seudónimos y pulsar «Borrar todas las exploraciones» al terminar en equipos compartidos.
+- Exploración **individual o grupal** con identificación opcional mediante nombre o seudónimo.
+- Elección de etapa, curso y uno o varios cuestionarios; los módulos no seleccionados no generan conclusiones.
+- Personalidad y preferencias: observaciones educativas descriptivas, **no una prueba psicométrica**.
+- Intereses: preguntas y propuestas de enriquecimiento con retos, productos y evidencias de aprendizaje.
+- Sensibilidades del entorno: observaciones propias provisionales y ajustes ambientales sugeridos; **no** equivale a una dieta sensorial clínica ni reproduce el cuestionario original Koynos.
+- Informes individuales en formato **portfolio**, informes de grupo, gráficos radiales y recomendaciones identificadas por destinatario.
+- Tarjetas y orientaciones desplegables; demostración ficticia con Lucía, Hugo y Martina.
+- Posibilidad de retomar evaluaciones durante la sesión de la pestaña y descargar informes como PDF.
+- Diseño adaptable a móvil, con menú lateral plegable y elementos institucionales del CEIP San Andrés y la Consejería.
 
-El módulo sensorial no reproduce el cuestionario Koynos, no utiliza sus baremos y **no diagnostica** alteraciones sensoriales; las orientaciones se revisan con la observación docente, el alumno y orientación cuando corresponda. Los perfiles de personalidad son descriptivos y sus reglas experimentales no están validadas clínicamente.
+## Privacidad y uso responsable
 
-## Publicar en el repositorio existente
+Las respuestas se calculan **en el navegador**. La aplicación **no las envía deliberadamente a un servidor** y utiliza `sessionStorage` para conservar el trabajo temporalmente dentro de una pestaña. La información suele permanecer tras recargar, pero normalmente se pierde al cerrar la pestaña. Algunos navegadores restauran sesiones cerradas: **cerrar no garantiza el borrado seguro**.
 
-Repositorio: https://github.com/gmonterov84-voli/horizonte-talento-perfiles  
-Rama: **`main`** · Carpeta Pages: **`/(root)`**.
+Se recomienda usar **seudónimos**, no introducir datos especialmente sensibles, descargar los informes necesarios en un entorno autorizado y utilizar la opción de **borrar las exploraciones** cuando se finalice. Los PDF descargados quedan almacenados en el dispositivo y deben protegerse conforme a la normativa aplicable y las pautas del centro.
 
-1. Conserva una copia de la versión anterior y comprueba que no haya cambios nuevos en el repositorio antes de subir nada.
-2. **Extrae** el ZIP de publicación: **no subas el ZIP como sustituto de `index.html`**.
-3. En GitHub, abre el repositorio y usa **Add file → Upload files**. Arrastra `index.html`, `README.md`, `CHANGELOG.md` y `RELEASE_NOTES_v0.5.0.md` extraídos a la **raíz**. `index.html` y `README.md` reemplazan los anteriores. El archivo `.nojekyll` ya existe en el repositorio: **consérvalo sin eliminarlo** (también hay copia vacía en este paquete para instalaciones nuevas).
-4. Commit recomendado: **`Publicar Explorador de Aula v0.5.0`**.
-5. Comprueba la web de GitHub Pages después del despliegue; el commit es el que actualiza la web. La creación de una Release por sí sola no actualiza Pages.
-6. En **Releases → Draft a new release**, crea la etiqueta **`v0.5.0`**, título **`Explorador de Aula v0.5.0`** y pega el contenido de `RELEASE_NOTES_v0.5.0.md` en el campo de descripción. Opcional: adjunta el ZIP como recurso descargable de esa Release.
+Esta herramienta **no diagnostica**, no sustituye la observación docente, la evaluación psicopedagógica ni la valoración profesional en integración sensorial. Las recomendaciones deben contextualizarse y evaluarse antes de aplicarse.
 
-## Verificaciones recomendadas tras subir
+## Publicación en GitHub Pages
 
-- Abrir la demo y recorrer informes de Lucía, Hugo y Martina; comprobar los tres apartados y orientaciones por nombre.
-- Iniciar un grupo real pequeño y confirmar navegación al inicio, retorno al resumen e informes individuales sin perder datos.
-- Descargar un PDF individual y otro grupal; si la impresión falla en el navegador interno, usar un navegador convencional.
-- Abrir en ordenador y móvil, revisar el indicador visible **v0.5.0** y verificar que siguen los avisos de carácter experimental.
-- Comprobar el enlace público y que no se ha modificado la configuración de Pages.
+Repositorio: https://github.com/gmonterov84-voli/horizonte-talento-perfiles
 
-Consulta `CHANGELOG.md` para el historial y `RELEASE_NOTES_v0.5.0.md` para el texto listo para pegar en GitHub Releases.
+1. Descarga el paquete ZIP de la versión 0.7.0 y **descomprímelo**.
+2. En el repositorio, entra en la rama `main` y utiliza **Add file → Upload files**.
+3. Sube **los archivos que están dentro del ZIP**, no el ZIP. Sustituye `index.html` y `README.md`; conserva `.nojekyll`. Añade `CHANGELOG.md` y `RELEASE_NOTES_v0.7.0.md`.
+4. Confirma el cambio (commit). En **Settings → Pages**, conserva la rama/carpeta que ya alimenta tu web.
+5. Abre la URL real de la web y verifica una evaluación individual, el informe grupal, la persistencia en la pestaña y la descarga de PDF.
+6. Crea una **Release** en **Releases → Draft a new release**, con el tag `v0.7.0`, el título `Explorador de Aula v0.7.0` y el contenido de `RELEASE_NOTES_v0.7.0.md`.
+
+**Importante:** el paquete se entrega para publicación manual. Su preparación no modifica automáticamente el repositorio ni demuestra que GitHub Pages esté actualizado.
+
+## Créditos institucionales
+
+La interfaz incorpora los logotipos suministrados por el usuario del **CEIP San Andrés de Almaraz** y la **Junta de Extremadura / Consejería de Educación y Formación Profesional** como identificación contextual del centro. Su presencia **no implica validación ni aval institucional de los cuestionarios o sus conclusiones**.
