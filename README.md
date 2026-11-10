@@ -1,52 +1,42 @@
-# Horizonte Talento · Explorador de Aula
+# Horizonte Talento · Explorador de Aula v0.8.0 (prototipo de revisión)
 
-**Versión: 0.7.0 · 9 de noviembre de 2026**  
-**Autor de la herramienta:** Guillermo Montero Vaquero  
-**Centro:** CEIP San Andrés · Almaraz (Cáceres)
+**Estado:** Borrador funcional, no publicado. Preparado para revisión pedagógica antes de actualizar GitHub.
 
-Herramienta web educativa para explorar **intereses**, **personalidad y preferencias de aprendizaje**, y **sensibilidades del entorno** de forma individual o grupal. Ofrece gráficos radiales y propuestas orientativas para la planificación docente.
+## ¿Qué cambia en Secundaria?
 
-## Contenido del repositorio
+Al elegir la etapa **Secundaria** (1.º–4.º ESO) y activar **Sensibilidades**, en el paso «Antes de empezar» se puede seleccionar:
 
-- `index.html`: aplicación completa. El HTML incorpora CSS, JavaScript y logotipos en un único archivo, sin dependencias externas para funcionar.
-- `README.md`: descripción y guía de publicación.
-- `CHANGELOG.md`: historial resumido de versiones.
-- `RELEASE_NOTES_v0.7.0.md`: texto preparado para la descripción de la Release de GitHub.
-- `.nojekyll`: archivo necesario para conservar el comportamiento de GitHub Pages configurado para el proyecto.
+- **Autoevaluación del estudiante**: 21 preguntas sensoriales, 4 de autorregulación y 2 de selección múltiple (situaciones y apoyos). Total: 27 pantallas.
+- **Observación del profesorado**: los mismos siete ámbitos, adaptados a conductas observadas o comunicadas, más las cuatro preguntas de autorregulación y los dos apartados cerrados. Total: 27 pantallas.
+- **Ambas perspectivas**: las dos modalidades independientes, 54 pantallas, sin sumar ni promediar resultados.
 
-## Funcionalidades
+**Todas las respuestas son cerradas**. Para las preguntas de frecuencia se ofrecen cinco niveles y opciones para indicar desconocimiento, ausencia de experiencia o preferencia por no responder. Las respuestas no valorables no se convierten en cero.
 
-- Exploración **individual o grupal** con identificación opcional mediante nombre o seudónimo.
-- Elección de etapa, curso y uno o varios cuestionarios; los módulos no seleccionados no generan conclusiones.
-- Personalidad y preferencias: observaciones educativas descriptivas, **no una prueba psicométrica**.
-- Intereses: preguntas y propuestas de enriquecimiento con retos, productos y evidencias de aprendizaje.
-- Sensibilidades del entorno: observaciones propias provisionales y ajustes ambientales sugeridos; **no** equivale a una dieta sensorial clínica ni reproduce el cuestionario original Koynos.
-- Informes individuales en formato **portfolio**, informes de grupo, gráficos radiales y recomendaciones identificadas por destinatario.
-- Tarjetas y orientaciones desplegables; demostración ficticia con Lucía, Hugo y Martina.
-- Posibilidad de retomar evaluaciones durante la sesión de la pestaña y descargar informes como PDF.
-- Diseño adaptable a móvil, con menú lateral plegable y elementos institucionales del CEIP San Andrés y la Consejería.
+Las preguntas de selección múltiple tienen las opciones «Ninguna» y «No sé / No dispongo de información», que son excluyentes. Cada opción relevante genera una orientación contextual o una estrategia para probar y revisar. Las conductas de autorregulación están separadas del recuento de sensibilidades.
 
-## Privacidad y uso responsable
+## Demostración ficticia
 
-Las respuestas se calculan **en el navegador**. La aplicación **no las envía deliberadamente a un servidor** y utiliza `sessionStorage` para conservar el trabajo temporalmente dentro de una pestaña. La información suele permanecer tras recargar, pero normalmente se pierde al cerrar la pestaña. Algunos navegadores restauran sesiones cerradas: **cerrar no garantiza el borrado seguro**.
+1. Abre `index.html`.
+2. Selecciona «Un alumno» → «Secundaria» → curso → «Sensibilidades».
+3. Pulsa **«Ver ejemplo ficticio de Secundaria (3 estudiantes)»**.
+4. Revisa el informe grupal y los portfolios de **Lucía, Hugo y Martina** (con ambas perspectivas).
 
-Se recomienda usar **seudónimos**, no introducir datos especialmente sensibles, descargar los informes necesarios en un entorno autorizado y utilizar la opción de **borrar las exploraciones** cuando se finalice. Los PDF descargados quedan almacenados en el dispositivo y deben protegerse conforme a la normativa aplicable y las pautas del centro.
+La demostración general de la pantalla de inicio (Primaria) continúa disponible.
 
-Esta herramienta **no diagnostica**, no sustituye la observación docente, la evaluación psicopedagógica ni la valoración profesional en integración sensorial. Las recomendaciones deben contextualizarse y evaluarse antes de aplicarse.
+## Conservado de v0.7.0
 
-## Publicación en GitHub Pages
+- Los módulos de intereses y personalidad/preferencias.
+- Las 21 observaciones originales de sensibilidades para Infantil y Primaria.
+- Los informes, gráficas radiales, estilo del portfolio, orientaciones pedagógicas y navegación.
+- El guardado temporal en la pestaña mediante `sessionStorage` y la exportación local a PDF.
 
-Repositorio: https://github.com/gmonterov84-voli/horizonte-talento-perfiles
+## Alcance y cautelas
 
-1. Descarga el paquete ZIP de la versión 0.7.0 y **descomprímelo**.
-2. En el repositorio, entra en la rama `main` y utiliza **Add file → Upload files**.
-3. Sube **los archivos que están dentro del ZIP**, no el ZIP. Sustituye `index.html` y `README.md`; conserva `.nojekyll`. Añade `CHANGELOG.md` y `RELEASE_NOTES_v0.7.0.md`.
-4. Confirma el cambio (commit). En **Settings → Pages**, conserva la rama/carpeta que ya alimenta tu web.
-5. Abre la URL real de la web y verifica una evaluación individual, el informe grupal, la persistencia en la pestaña y la descarga de PDF.
-6. Crea una **Release** en **Releases → Draft a new release**, con el tag `v0.7.0`, el título `Explorador de Aula v0.7.0` y el contenido de `RELEASE_NOTES_v0.7.0.md`.
+- Este cuestionario **no está validado** y no es una herramienta diagnóstica ni una prueba psicométrica.
+- El recuento de respuestas frecuentes por ámbito es descriptivo; **no es una puntuación clínica** ni mide intensidad.
+- Las respuestas del estudiante y del profesorado **no se comparan como si una fuese más correcta**. Las diferencias invitan a conversar y observar situaciones concretas.
+- Las propuestas de apoyo deben acordarse y comprobarse con el alumnado; no se prescribe una dieta sensorial terapéutica.
+- Se recomienda usar seudónimos para las pruebas. Los datos no se envían a un servidor; se almacenan temporalmente en la pestaña. Los PDF descargados deben tratarse como documentos que pueden contener información personal.
+- Los logos identifican el entorno escolar, no acreditan ni validan científicamente el cuestionario.
 
-**Importante:** el paquete se entrega para publicación manual. Su preparación no modifica automáticamente el repositorio ni demuestra que GitHub Pages esté actualizado.
-
-## Créditos institucionales
-
-La interfaz incorpora los logotipos suministrados por el usuario del **CEIP San Andrés de Almaraz** y la **Junta de Extremadura / Consejería de Educación y Formación Profesional** como identificación contextual del centro. Su presencia **no implica validación ni aval institucional de los cuestionarios o sus conclusiones**.
+**Autor:** Guillermo Montero Vaquero · Horizonte Talento · CEIP San Andrés (Almaraz).
