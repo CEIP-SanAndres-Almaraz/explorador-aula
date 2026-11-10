@@ -16,12 +16,7 @@ Las preguntas de selección múltiple tienen las opciones «Ninguna» y «No sé
 
 ## Demostración ficticia
 
-1. Abre `index.html`.
-2. Selecciona «Un alumno» → «Secundaria» → curso → «Sensibilidades».
-3. Pulsa **«Ver ejemplo ficticio de Secundaria (3 estudiantes)»**.
-4. Revisa el informe grupal y los portfolios de **Lucía, Hugo y Martina** (con ambas perspectivas).
-
-La demostración general de la pantalla de inicio (Primaria) continúa disponible.
+La aplicación conserva **una única demostración**, la original, accesible desde la pantalla de inicio mediante «Ver una demostración ficticia». Usa tres estudiantes ficticios —**Lucía, Hugo y Martina**— y muestra los cuestionarios de Primaria. No se incluye una demostración adicional para Secundaria; esa modalidad se puede probar contestando los cuestionarios desde el recorrido habitual.
 
 ## Conservado de v0.7.0
 
