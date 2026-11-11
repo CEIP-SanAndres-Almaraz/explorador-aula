@@ -1,13 +1,12 @@
-# Cambios del prototipo v0.8.0
+# Cambios
 
-- Nueva modalidad experimental de sensibilidades adaptada a adolescentes de ESO.
-- 21 ítems para autoevaluación y 21 ítems paralelos para observación docente.
-- 4 ítems complementarios de autorregulación, sin mezclarlos con sensibilidad sensorial.
-- Dos bloques de selección múltiple (situaciones de dificultad y apoyos considerados útiles), sin respuestas abiertas.
-- Tres opciones: estudiante, docente o ambas perspectivas; en el último caso las respuestas se mantienen separadas.
-- Recomendaciones educativas contextuales por ítem, situación y apoyo seleccionado.
-- Gráficas y portfolios con recuentos de respuestas frecuentes; no se atribuyen baremos clínicos.
-- Informe grupal con orientaciones por estudiante y fuentes diferenciadas.
-- Se conserva únicamente la demostración ficticia original de la pantalla de inicio, sin acceso ni datos de demostración adicionales para Secundaria.
-- Se conservan los cuestionarios originales de Infantil y Primaria y el resto de la aplicación.
-- Versión de **revisión**, todavía sin publicación en GitHub.
+## v0.8.1 · Prototipo de ampliación con IA
+- Nueva sección opcional al final de informes individuales y grupales.
+- Tres prompts copiados manualmente para enriquecer Intereses, Personalidad y preferencias, y Sensibilidades.
+- Instrucciones que incluyen Educación Infantil, Primaria y ESO.
+- Aviso de protección de datos y prohibición de envío automático.
+- Sin cambios en cuestionarios, cálculos ni datos guardados.
+- Mantiene una sola demostración ficticia y sin Bachillerato.
+
+## v0.8.0 · Prototipo previo
+- Adaptación de sensibilidades para ESO con autoevaluación, observación docente y análisis de ambas perspectivas.
