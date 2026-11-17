@@ -1,5 +1,13 @@
 # Cambios
 
+## v0.8.2 · Ampliación de un informe existente
+- Nueva selección de cuestionarios pendientes desde los informes individuales y grupales.
+- Conservación de respuestas previas y acumulación de resultados y PDF en la misma exploración.
+- Avance por los cuestionarios nuevos en alumnos de un grupo, sin repetir los anteriores.
+- Sin otros cambios funcionales sobre la v0.8.1.
+
+# Cambios
+
 ## v0.8.1 · Prototipo de ampliación con IA
 - Nueva sección opcional al final de informes individuales y grupales.
 - Tres prompts copiados manualmente para enriquecer Intereses, Personalidad y preferencias, y Sensibilidades.
